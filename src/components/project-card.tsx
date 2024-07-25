@@ -27,7 +27,7 @@ export function ProjectCard({ img, title, desc }: ProjectCardProps) {
       </CardHeader>
       <CardBody className="p-0">
         <a
-          href="#"
+          href=""
           className="text-blue-gray-900 transition-colors hover:text-gray-800"
         >
           <Typography variant="h5" className="mb-2">

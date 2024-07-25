@@ -1,53 +1,32 @@
 "use client";
+import front from '../image/react-next.png';
+import movil from '../image/5ef3a1148ac97166a06253c1_flutter-logo-white-inset.svg';
+import back from '../image/1_s9kgU8F1eB7Tzs7sG0YhBg.jpg';
 
 import { Typography } from "@material-tailwind/react";
-import {
-  RectangleGroupIcon,
-  FingerPrintIcon,
-  SwatchIcon,
-  HashtagIcon,
-  EyeIcon,
-  DocumentTextIcon,
-} from "@heroicons/react/24/solid";
+
 import { SkillCard } from "@/components";
 
 const SKILLS = [
   {
-    icon: RectangleGroupIcon,
-    title: "Frontend Web Development:",
+    icon: front,
+    title: "Desarrollo Frontend",
     children:
       "Creating beautiful and functional web experiences is my forte. Using the latest technologies and best practices, I design and build websites that captivate and engage users.",
   },
   {
-    icon: FingerPrintIcon,
-    title: "Mobile App Development",
+    icon: movil,
+    title: "Desarrollo Movil",
     children:
       " I specialize in creating responsive and intuitive mobile apps that work seamlessly across iOS & Android devices. From concept to deployment, I handle every stage of the development process.",
   },
   {
-    icon: SwatchIcon,
-    title: "Technology Stack",
+    icon: back,
+    title: "Desarrollo Backend",
     children:
       "I'm well-versed in the industry's most popular frontend technologies, including HTML5, CSS3, JavaScript, and frameworks like React and React Native.",
   },
-  {
-    icon: HashtagIcon,
-    title: " Web Optimization",
-    children:
-      "Performance matters. I optimize websites and apps for speed, ensuring your users enjoy a fast and responsive experience, which in turn boosts user satisfaction and SEO rankings.",
-  },
-  {
-    icon: EyeIcon,
-    title: "User-Centric Design",
-    children:
-      "My development goes hand-in-hand with an eye for design. I create user interfaces that are not only functional but also aesthetically pleasing, providing a seamless and enjoyable user journey.",
-  },
-  {
-    icon: DocumentTextIcon,
-    title: "Testing and Quality Assurance",
-    children:
-      "I rigorously test and debug applications to guarantee a bug-free and secure environment for users. Your peace of mind is as important to me as the functionality of your project.",
-  },
+
 ];
 
 export function Skills() {
@@ -55,10 +34,10 @@ export function Skills() {
     <section className="px-8">
       <div className="container mx-auto mb-20 text-center">
         <Typography color="blue-gray" className="mb-2 font-bold uppercase">
-          my skills
+          Mis Habilidades
         </Typography>
         <Typography variant="h1" color="blue-gray" className="mb-4">
-          What I do
+          A lo que me dedico
         </Typography>
         <Typography
           variant="lead"

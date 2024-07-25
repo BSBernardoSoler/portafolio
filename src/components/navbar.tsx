@@ -17,18 +17,26 @@ import {
 
 const NAV_MENU = [
   {
-    name: "Page",
+    name: "Inicio",
     icon: RectangleStackIcon,
   },
   {
-    name: "Account",
+    name: "Habilidades",
     icon: UserCircleIcon,
   },
   {
-    name: "Docs",
+    name: "Proyectos",
     icon: CommandLineIcon,
-    href: "https://www.material-tailwind.com/docs/react/installation",
   },
+  {
+    name: "Opiniones",
+    icon: CommandLineIcon,
+  },
+  {
+    name: "Contacto",
+    icon: CommandLineIcon,
+  },
+
 ];
 
 interface NavItemProps {
@@ -36,13 +44,11 @@ interface NavItemProps {
   href?: string;
 }
 
-function NavItem({ children, href }: NavItemProps) {
+function NavItem({ children }: NavItemProps) {
   return (
     <li>
       <Typography
         as="a"
-        href={href || "#"}
-        target={href ? "_blank" : "_self"}
         variant="paragraph"
         color="gray"
         className="flex items-center gap-2 font-medium text-gray-900"
@@ -66,15 +72,14 @@ export function Navbar() {
   }, []);
 
   return (
-    <MTNavbar shadow={false} fullWidth className="border-0 sticky top-0 z-50">
+    <MTNavbar shadow={true} fullWidth className="border-0 sticky top-0 z-50 bg-light-blue-100">
       <div className="container mx-auto flex items-center justify-between">
         <Typography color="blue-gray" className="text-lg font-bold">
-          Material Tailwind
+          BERNARDO SOLER
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
-          {NAV_MENU.map(({ name, icon: Icon, href }) => (
-            <NavItem key={name} href={href}>
-              <Icon className="h-5 w-5" />
+          {NAV_MENU.map(({ name, }) => (
+            <NavItem key={name} >
               {name}
             </NavItem>
           ))}

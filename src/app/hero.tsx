@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Input, Button, Typography } from "@material-tailwind/react";
+import pic from '../../public/image/pic.png';
 
 function Hero() {
   return (
@@ -13,15 +14,13 @@ function Hero() {
             color="blue-gray"
             className="mb-4 lg:text-5xl !leading-tight text-3xl"
           >
-            Welcome to my Web <br /> Development Portofolio!
+            ¡Hola Bienvenido a mi <br /> Portafolio de desarrollador!
           </Typography>
           <Typography
             variant="lead"
             className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
           >
-            I&apos;m Lily Smith, a passionate web developer based in USA. Here,
-            you&apos;ll get a glimpse of my journey in the world of web
-            development, where creativity meets functionality.
+           Hola, soy Bernardo Soler, un apasionado desarrollador full stack con una visión innovadora y un compromiso inquebrantable con la excelencia tecnológica. A lo largo de mi carrera, he tejido un camino diverso que abarca desde el diseño elegante de interfaces hasta la arquitectura robusta de sistemas.
           </Typography>
           <div className="grid">
             <Typography
@@ -49,7 +48,7 @@ function Hero() {
           width={1024}
           height={1024}
           alt="team work"
-          src="/image/image-7.svg"
+          src={pic}
           className="h-[36rem] w-full rounded-xl object-cover"
         />
       </div>
